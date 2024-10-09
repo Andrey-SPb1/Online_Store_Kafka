@@ -1,0 +1,3 @@
+2024-10-09T22:24:48.823+03:00  INFO 14072 --- [orders-service] [http-nio-8081-exec-1] o.javacode.orders.kafka.OrderProducer    : New order: OrderDto[id=3, price=200.0, status=CANCELED]
+2024-10-09T22:24:49.029+03:00  INFO 14072 --- [orders-service] [org.springframework.kafka.KafkaListenerEndpointContainer#2-0-C-1] o.javacode.orders.kafka.OrderConsumer    : Paid order: OrderDto[id=3, price=200.0, status=CANCELED]
+2024-10-09T22:24:49.233+03:00  INFO 14072 --- [orders-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.javacode.orders.kafka.OrderConsumer    : Delivered order: OrderDto[id=3, price=200.0, status=CANCELED]

@@ -1,0 +1,1 @@
+2024-10-09T22:24:49.220+03:00  INFO 15376 --- [notification-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.j.n.kafka.NotificationsProducer        : The order has been successfully delivered - OrderDto[id=3, price=200.0, status=CANCELED]

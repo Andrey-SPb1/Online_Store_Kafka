@@ -1,0 +1,1 @@
+2024-10-09T22:24:49.110+03:00  INFO 15552 --- [Shipping] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.j.shipping.kafka.ShippingProducer      : The order has been packed and shipped - OrderDto[id=3, price=200.0, status=CANCELED]

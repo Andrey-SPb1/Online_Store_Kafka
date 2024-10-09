@@ -1,0 +1,40 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: orders-service
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: orders-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      missing-topics-fatal: false
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/onlineshopkafka
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        hbm2ddl:
+          auto: validate
+
+logging:
+  level:
+    root: error
+    org.javacode.orders.kafka.OrderConsumer: info
+    org.javacode.orders.kafka.OrderProducer: info
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+  file:
+    name: logs/orders.log

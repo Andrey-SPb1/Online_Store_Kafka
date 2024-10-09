@@ -1,0 +1,2 @@
+2024-10-09T22:24:48.998+03:00  INFO 14028 --- [payment-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.j.payment.kafka.PaymentProducer        : Order paid - OrderDto[id=3, price=200.0, status=CANCELED]
+2024-10-09T22:24:49.047+03:00  INFO 14028 --- [payment-service] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.j.payment.kafka.PaymentConsumer        : Payment created - Payment(id=7, orderId=3, amount=200.0)
